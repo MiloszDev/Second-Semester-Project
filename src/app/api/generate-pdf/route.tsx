@@ -3,6 +3,8 @@ import { renderToStream } from "@react-pdf/renderer";
 import { InvoicePDF } from "@/components/invoices/InvoicePDF";
 import { InvoiceWithClient } from "@/types";
 
+export const runtime = 'nodejs'; // Ensure this runs in a Node.js environment (required for @react-pdf/renderer)
+
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
