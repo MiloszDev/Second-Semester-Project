@@ -4,6 +4,8 @@ import { InvoicePDF } from "@/components/invoices/InvoicePDF";
 import { InvoiceWithClient } from "@/types";
 
 export const runtime = 'nodejs'; // Ensure this runs in a Node.js environment (required for @react-pdf/renderer)
+export const maxDuration = 60; // Set max duration directly in route config
+export const dynamic = 'force-dynamic';
 
 export async function POST(req: NextRequest) {
   try {

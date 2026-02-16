@@ -1,8 +1,0 @@
-{
-  "functions": {
-    "src/app/api/generate-pdf/route.tsx": {
-      "maxDuration": 60,
-      "memory": 1024
-    }
-  }
-}
